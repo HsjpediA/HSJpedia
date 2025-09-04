@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HSJA - Edukasi, Bisnis, Komunitas</title>
+    <title>HSJpediA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +27,25 @@
       .border-hsja-blue {
         border-color: rgb(37, 66, 211);
       }
+      .Profile {
+        background-color: rgb(37, 66, 211);
+        border-radius: 50%;
+        width: 8%;
+        height: 8%
+      }
+      .hover-text-hsja-blue:hover {
+        color: rgb(37, 66, 211);
+      }
+      
+      .Logo_Title {
+        display: flex;
+        align-items: center;
+        gap: 2%;
+      }
+
+      #tentang {
+        background-color: rgb()
+      }
 
       /* Styling untuk section yang akan muncul saat di-scroll */
       .fade-in-section {
@@ -45,33 +64,33 @@
     <!-- Header & Navigasi -->
     <header
       id="header"
-      class="bg-white shadow-md fixed w-full top-0 z-50 transition-all duration-300"
+      class="bg-blue-500 shadow-md fixed w-full top-0 z-50 transition-all duration-300"
     >
-      <div
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <a href="#beranda" class="text-2xl font-bold text-hsja-blue">HSJA</a>
-
+      <div class="container mx-auto px-1 py-4 bg-blue-500 flex justify-between items-center">
+        <div class="Logo_Title">
+        <img src="logoLamaHSJA.jpg" alt="" class="Profile">
+        <a href="#beranda" class="text-2xl  hover:text-2xl transition-all text-white font-bold text-hsja-blue">HIMPUNAN SISWA JURUSAN AKUNTANSI</a>
+          </div>
         <!-- Navigasi Desktop -->
-        <nav class="hidden md:flex space-x-8 items-center">
+        <nav class="hidden md:flex text-white font-bold space-x-8 items-center">
           <a
             href="#tentang"
-            class="text-gray-600 hover:text-hsja-blue transition-colors"
+            class= "hover:text-hsja-white transition-colors"
             >Tentang</a
           >
           <a
             href="#anggota"
-            class="text-gray-600 hover:text-hsja-blue transition-colors"
+            class="hover:text-hsja-blue transition-colors"
             >Anggota</a
           >
           <a
             href="#visi-misi"
-            class="text-gray-600 hover:text-hsja-blue transition-colors"
+            class=" hover:text-hsja-blue transition-colors"
             >Visi & Misi</a
           >
           <a
             href="#galeri"
-            class="text-gray-600 hover:text-hsja-blue transition-colors"
+            class=" hover-text-hsja-blue transition-colors"
             >Galeri</a
           >
         </nav>
@@ -122,20 +141,22 @@
           <h1 class="text-5xl md:text-7xl font-bold text-gray-900">
             <span class="text-hsja-blue">HSJA</span> Organisasi
           </h1>
-          <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+          <div class="flex">
+          <p class="mt-4 text-lg md:text-xl hover: font-bold text-black max-w-2xl mx-auto">
             HIMPUNAN SISWA JURUSAN AKUNTANSI
           </p>
-<!--           <a
+          </div>
+          <a
             href="#tentang"
             class="mt-8 inline-block hsja-blue text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:opacity-90 transition-opacity"
           >
             Pelajari Lebih Lanjut
-          </a> -->
+          </a>
         </div>
       </section>
 
       <!-- Section Tentang -->
-      <section id="tentang" class="py-20 bg-gray-50 fade-in-section">
+      <section id="tentang" class="py-20 fade-in-section">
         <div class="container mx-auto px-6 text-center">
           <h2 class="text-3xl font-bold mb-4">Tentang Kami</h2>
           <div class="w-24 h-1 bg-hsja-blue mx-auto mb-8"></div>
