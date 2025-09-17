@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      class="rounded-full"
+      rel="icon"
+      type="image/x-icon"
+      href="/Asset/LogoHsja-removebg-preview.png"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
@@ -24,14 +30,18 @@
       .text-hsja-blue {
         color: rgb(37, 66, 211);
       }
-      .border-hsja-blue {
-        border-color: rgb(37, 66, 211);
+      .text-akuntansi-blue {
+        color: rgb(37, 66, 211) ;
+      }
+        .border-hsja-blue {
+          border-color: rgb(37, 66, 211);
       }
       .Profile {
         background-color: rgb(37, 66, 211);
+        
         border-radius: 50%;
-        width: 8%;
-        height: 8%
+        width: 9%;
+        height: 9%
       }
       .hover-text-hsja-blue:hover {
         color: rgb(37, 66, 211);
@@ -58,6 +68,15 @@
         opacity: 1;
         transform: translateY(0);
       }
+
+      #beranda {
+        background-image: url();
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+      }
     </style>
   </head>
   <body class="bg-gray-50 text-gray-800">
@@ -67,26 +86,26 @@
       class="bg-blue-500 shadow-md fixed w-full top-0 z-50 transition-all duration-300"
     >
       <div class="container mx-auto px-1 py-4 bg-blue-500 flex justify-between items-center">
-        <div class="Logo_Title">
-        <img src="logoLamaHSJA.jpg" alt="" class="Profile">
-        <a href="#beranda" class="text-2xl  hover:text-2xl transition-all text-white font-bold text-hsja-blue">HIMPUNAN SISWA JURUSAN AKUNTANSI</a>
-          </div>
+        <div class="min-md:hidden Logo_Title">
+          <img src="Asset/LogoHsja.jpg" alt="" class="Profile">
+          <a href="#beranda" class="text-2xl  hover:text-2xl transition-all text-white font-bold text-hsja-blue">HIMPUNAN SISWA JURUSAN AKUNTANSI</a>
+        </div>
         <!-- Navigasi Desktop -->
         <nav class="hidden md:flex text-white font-bold space-x-8 items-center">
           <a
             href="#tentang"
-            class= "hover:text-hsja-white transition-colors"
+            class= "hover-text-hsja-blue transition-colors"
             >Tentang</a
           >
           <a
             href="#anggota"
-            class="hover:text-hsja-blue transition-colors"
+            class="hover-text-hsja-blue transition-colors"
             >Anggota</a
           >
           <a
             href="#visi-misi"
-            class=" hover:text-hsja-blue transition-colors"
-            >Visi & Misi</a
+            class="hover-text-hsja-blue transition-colors"
+            >Visi  Misi</a
           >
           <a
             href="#galeri"
@@ -123,7 +142,7 @@
           >Anggota</a
         >
         <a href="#visi-misi" class="block py-2 px-6 text-sm hover:bg-gray-100"
-          >Visi & Misi</a
+          >Visi  Misi</a
         >
         <a href="#galeri" class="block py-2 px-6 text-sm hover:bg-gray-100"
           >Galeri</a
@@ -137,21 +156,19 @@
         id="beranda"
         class="min-h-screen flex items-center justify-center bg-white"
       >
-        <div class="text-center px-4">
+        <div class="text-center px-4 ">
           <h1 class="text-5xl md:text-7xl font-bold text-gray-900">
             <span class="text-hsja-blue">HSJA</span> Organisasi
           </h1>
-          <div class="flex">
-          <p class="mt-4 text-lg md:text-xl hover: font-bold text-black max-w-2xl mx-auto">
-            HIMPUNAN SISWA JURUSAN AKUNTANSI
-          </p>
+          <div class="flex mt-4 text-lg md:text-xl justify-center">
+          <!-- <p class="mt-4 text-lg md:text-xl hover: font-bold text-black max-w-2xl mx-auto">
+            HIMPUNAN SISWA JURUSAN 
+          </p> -->
+          <span class="pr-2 font-semibold">HIMPUNAN SISWA JURUSAN</span> 
+          <span class="text-hsja-blue font-bold">AKUNTANSI</span>
           </div>
-          <a
-            href="#tentang"
-            class="mt-8 inline-block hsja-blue text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:opacity-90 transition-opacity"
-          >
-            Pelajari Lebih Lanjut
-          </a>
+          <a href="#tentang" class="mt-8 inline-block hsja-blue text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:font-extrabold hover:opacity-90 transition-opacity"
+          >Brief description</a>
         </div>
       </section>
 
@@ -174,48 +191,48 @@
       <!-- Section Anggota -->
       <section id="anggota" class="py-20 bg-white fade-in-section">
         <div class="container mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-4">Tim Inti Kami</h2>
+          <h2 class="text-3xl font-bold text-center mb-4">Pengurus Harian HSJA</h2>
           <div class="w-24 h-1 bg-hsja-blue mx-auto mb-12"></div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-8">
             <!-- Anggota 1 -->
             <div class="text-center p-4">
               <img
-                src="https://placehold.co/200x200/e2e8f0/333?text=Foto"
+                src="/Asset/Gen1_Adelia_Hsja.JPG"
                 alt="Foto Anggota 1"
                 class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg"
               />
-              <h3 class="text-xl font-semibold">Nama Anggota 1</h3>
-              <p class="text-gray-500">Jabatan</p>
+              <h3 class="text-xl font-semibold">Adelia Rahmawati Taher</h3>
+              <p class="text-gray-500">Ketua</p>
             </div>
             <!-- Anggota 2 -->
             <div class="text-center p-4">
               <img
-                src="https://placehold.co/200x200/e2e8f0/333?text=Foto"
+                src="/Asset/Gen1_LIa_Hsja.jpg"
                 alt="Foto Anggota 2"
                 class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg"
               />
-              <h3 class="text-xl font-semibold">Nama Anggota 2</h3>
-              <p class="text-gray-500">Jabatan</p>
+              <h3 class="text-xl font-semibold">Srikandi Amalia Turnianto</h3>
+              <p class="text-gray-500">Wakil Ketua</p>
             </div>
             <!-- Anggota 3 -->
             <div class="text-center p-4">
               <img
-                src="https://placehold.co/200x200/e2e8f0/333?text=Foto"
+                src="/Asset/Gen1_Sifa_Hsja.jpg"
                 alt="Foto Anggota 3"
                 class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg"
               />
-              <h3 class="text-xl font-semibold">Nama Anggota 3</h3>
-              <p class="text-gray-500">Jabatan</p>
+              <h3 class="text-xl font-semibold">Sifa Dinda Rahmawati</h3>
+              <p class="text-gray-500">Sekertaris</p>
             </div>
             <!-- Anggota 4 -->
             <div class="text-center p-4">
               <img
-                src="https://placehold.co/200x200/e2e8f0/333?text=Foto"
+                src="/Asset/Gen1_Sifa(B)_Hsja.jpg"
                 alt="Foto Anggota 4"
                 class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg"
               />
-              <h3 class="text-xl font-semibold">Nama Anggota 4</h3>
-              <p class="text-gray-500">Jabatan</p>
+              <h3 class="text-xl font-semibold">Sifa Dinda Rahmawati</h3>
+              <p class="text-gray-500">Bendahara</p>
             </div>
           </div>
         </div>
@@ -263,47 +280,47 @@
       <!-- Section Galeri -->
       <section id="galeri" class="py-20 bg-white fade-in-section">
         <div class="container mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center mb-4">Galeri Kegiatan</h2>
+          <h2 class="text-3xl font-bold text-center mb-4">Galeri Generasi HSJA</h2>
           <div class="w-24 h-1 bg-hsja-blue mx-auto mb-12"></div>
           <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
-                src="https://placehold.co/600x400/3b82f6/ffffff?text=Kegiatan+1"
+                src="https://placehold.co/600x400/3b82f6/ffffff?text=Next%20Gen"
                 alt="Galeri 1"
                 class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
-                src="https://placehold.co/600x400/3b82f6/ffffff?text=Kegiatan+2"
+                src="https://placehold.co/600x400/3b82f6/ffffff?text=Next%20Gen"
                 alt="Galeri 2"
                 class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
-                src="https://placehold.co/600x400/3b82f6/ffffff?text=Kegiatan+3"
+                src="https://placehold.co/600x400/3b82f6/ffffff?text=Next%20Gen"
                 alt="Galeri 3"
                 class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
-                src="https://placehold.co/600x400/3b82f6/ffffff?text=Kegiatan+4"
+                src="https://placehold.co/600x400/3b82f6/ffffff?text=Next%20Gen"
                 alt="Galeri 4"
                 class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
-                src="https://placehold.co/600x400/3b82f6/ffffff?text=Kegiatan+5"
+                src="https://placehold.co/600x400/3b82f6/ffffff?text=Next%20Gen"
                 alt="Galeri 5"
                 class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
-                src="https://placehold.co/600x400/3b82f6/ffffff?text=Kegiatan+6"
+                src="https://placehold.co/600x400/3b82f6/ffffff?text=Next%20Gen"
                 alt="Galeri 6"
                 class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
@@ -317,7 +334,7 @@
     <footer class="hsja-blue text-white">
       <div class="container mx-auto px-6 py-8 text-center">
         <h3 class="text-2xl font-bold mb-2">Hubungi Kami</h3>
-        <p>Email: hsjasmkndarululummuncar@gmail.com | Telp: xxxx</p>
+          <a class="hover:underline hover:text-sky-500" href="https://www.instagram.com/hsja_smkndu?igsh=NWZ1YzY1NGp1NHJ5">Instagram : hsja_smkndu</a>
         <p class="mt-4 text-sm opacity-80">
           &copy; 2025 HSJA Organization. All Rights Reserved.
         </p>
